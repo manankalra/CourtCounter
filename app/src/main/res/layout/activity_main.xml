@@ -30,6 +30,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
+                android:fontFamily="sans-serif-medium"
                 android:text="Team A"
                 android:textSize="20dp" />
 
@@ -40,50 +41,48 @@
                 android:layout_below="@id/teama"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
+                android:fontFamily="sans-serif-light"
                 android:text="0"
                 android:textColor="#000000"
                 android:textSize="60dp" />
 
             <Button
                 android:id="@+id/three"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/zero_text_view"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="18dp"
-                android:background="#ff751a"
+                android:onClick="plusThreeA"
                 android:text="+3 Points"
-                android:textAllCaps="true"
-                android:onClick="plusThreeA"/>
+                android:textAllCaps="true" />
 
             <Button
                 android:id="@+id/two"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/three"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="18dp"
-                android:background="#ff751a"
+                android:onClick="plusTwoA"
                 android:text="+2 Points"
-                android:textAllCaps="true"
-                android:onClick="plusTwoA"/>
+                android:textAllCaps="true" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/two"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="18dp"
-                android:background="#ff751a"
+                android:onClick="plusOneA"
                 android:text="Free Throw"
-                android:textAllCaps="true"
-                android:onClick="plusOneA"/>
+                android:textAllCaps="true" />
 
 
         </RelativeLayout>
@@ -104,6 +103,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
+                android:fontFamily="sans-serif-medium"
                 android:text="Team B"
                 android:textSize="20dp" />
 
@@ -114,50 +114,48 @@
                 android:layout_below="@id/teamb"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
+                android:fontFamily="sans-serif-light"
                 android:text="0"
                 android:textColor="#000000"
                 android:textSize="60dp" />
 
             <Button
                 android:id="@+id/threeb"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/zero_text_viewb"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="18dp"
-                android:background="#ff751a"
+                android:onClick="plusThreeB"
                 android:text="+3 Points"
-                android:textAllCaps="true"
-                android:onClick="plusThreeB"/>
+                android:textAllCaps="true" />
 
             <Button
                 android:id="@+id/twob"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/threeb"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="18dp"
-                android:background="#ff751a"
+                android:onClick="plusTwoB"
                 android:text="+2 Points"
-                android:textAllCaps="true"
-                android:onClick="plusTwoB"/>
+                android:textAllCaps="true" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/twob"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"
                 android:layout_marginBottom="15dp"
                 android:layout_marginLeft="18dp"
-                android:background="#ff751a"
+                android:onClick="plusOneB"
                 android:text="Free Throw"
-                android:textAllCaps="true"
-                android:onClick="plusOneB"/>
+                android:textAllCaps="true" />
 
         </RelativeLayout>
 
@@ -168,7 +166,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="#ff751a"
-        android:text="Reset"
-        android:onClick="reset"/>
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:onClick="reset"
+        android:text="Reset" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray" />
 </RelativeLayout>
